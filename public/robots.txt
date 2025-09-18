@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and internal pages for SEO optimization
+Disallow: /admin
+Disallow: /supplier
+Disallow: /checkout
+Disallow: /order-confirmation
+Disallow: /payment-success
+Disallow: /account
+
+# Allow important pages for search engines
+Allow: /
+Allow: /product/*
+Allow: /category/*
+Allow: /brand/*
+Allow: /search
+Allow: /auth
+Allow: /page/*
+
+# Specific user agents
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap location
+Sitemap: https://kbeautystore.com/sitemap.xml
+
+# Crawl delay for politeness (1 second)
+Crawl-delay: 1

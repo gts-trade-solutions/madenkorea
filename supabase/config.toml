@@ -1,0 +1,12 @@
+project_id = "qpafvpwppkzgxtiiepcb"
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://qpafvpwppkzgxtiiepcb.supabase.co"]
+
+[functions.create-checkout]
+verify_jwt = false
+
+[functions.verify-payment]
+verify_jwt = false

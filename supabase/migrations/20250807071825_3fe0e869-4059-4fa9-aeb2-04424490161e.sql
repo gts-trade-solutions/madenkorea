@@ -1,0 +1,8 @@
+-- -- Update the existing Anua video to the new luxury Japanese skincare video
+-- UPDATE videos 
+-- SET 
+--   title = 'Luxury Japanese Skincare and Beauty Products',
+--   description = 'Professional dermatologist review of luxury Japanese skincare and beauty brands',
+--   video_url = 'https://www.youtube.com/watch?v=XRoT_jgN4-4',
+--   updated_at = now()
+-- WHERE title = 'Anua' AND video_type = 'hero' AND is_active = true;

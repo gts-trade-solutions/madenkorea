@@ -1,0 +1,10 @@
+-- Insert sample notifications for demo purposes
+INSERT INTO public.notifications (user_id, user_role, title, message, notification_type, metadata) VALUES
+  ('00000000-0000-0000-0000-000000000001', 'admin', 'Low Stock Alert', 'Korean Glow Serum is running low (5 units remaining)', 'stock_alert', '{"product_id": "korean-glow-serum", "current_stock": 5}'),
+  ('00000000-0000-0000-0000-000000000001', 'admin', 'New Supplier Request', 'Beauty Co. has requested supplier access', 'supplier_request', '{"company_name": "Beauty Co.", "contact_email": "contact@beautyco.com"}'),
+  ('00000000-0000-0000-0000-000000000001', 'admin', 'System Maintenance', 'Scheduled maintenance tonight at 2 AM', 'system_maintenance', '{"scheduled_time": "2025-01-15T02:00:00Z"}'),
+  ('00000000-0000-0000-0000-000000000002', 'supplier', 'Product Approved', 'Your product "Consumer Innovations Essence" has been approved', 'product_approved', '{"product_id": "Consumer Innovations-essence", "approved_by": "admin"}'),
+  ('00000000-0000-0000-0000-000000000002', 'supplier', 'Low Stock Alert', 'Your product "Hydrating Toner" is running low', 'stock_alert', '{"product_id": "hydrating-toner", "current_stock": 3}'),
+  ('00000000-0000-0000-0000-000000000003', 'customer', 'Order Confirmed', 'Your order #ORD-20250115-0001 has been confirmed', 'order_status', '{"order_id": "ORD-20250115-0001", "status": "confirmed"}'),
+  ('00000000-0000-0000-0000-000000000003', 'customer', 'Payment Successful', 'Payment for order #ORD-20250115-0001 processed successfully', 'payment_confirmed', '{"order_id": "ORD-20250115-0001", "amount": 89.99}'),
+  ('00000000-0000-0000-0000-000000000003', 'customer', 'Special Promotion', 'Get 20% off on all Consumer Innovations products this week!', 'promotion', '{"discount_percentage": 20, "valid_until": "2025-01-22"}')
